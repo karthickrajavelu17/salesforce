@@ -10,6 +10,7 @@ public class AccountHandler {
    catch(DmlException e)
    {
        System.debug('A Dml Exception has occured in git vs'+e.getMessage());
+       system.debug("staus -"+e.getMessage());
        return null;
    }
  
