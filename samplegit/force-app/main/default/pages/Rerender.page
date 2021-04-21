@@ -1,0 +1,11 @@
+<apex:page controller="RerenderExample">
+    <apex:form >
+    <apex:pageBlock >
+       <apex:commandButton value="Refresh lower page block" action="{!show}" reRender="lowerpage"/>
+    </apex:pageBlock>
+    <apex:pageBlock id="lowerpage">
+
+        <apex:outputText value="{!outputstring}"></apex:outputText>
+    </apex:pageBlock>
+        </apex:form>
+</apex:page>

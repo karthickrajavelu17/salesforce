@@ -1,0 +1,6 @@
+<apex:page standardController="Account">
+    <apex:detail subject="{!account.OwnerId}" relatedlist="false" title="false"/>
+    <apex:detail relatedlist="false"/>
+ 
+    
+</apex:page>

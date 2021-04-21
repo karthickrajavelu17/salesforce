@@ -1,0 +1,16 @@
+<aura:component>
+    <aura:attribute name="industry" type="String" default="Education" />
+    <aura:attribute name="otherIndustry" type="String" />
+<div style='width:20%'>
+    <lightning:select name="select1" label="What industry?" value="{! v.industry }">
+        <option value="Education">Education</option>
+        <option value="Finance">Financial Services</option>
+        <option value="Sports">Sports and Recreation</option>
+        <option value="Other">Other</option>
+    </lightning:select>
+
+    <aura:if isTrue="{! v.industry == 'Other' }">
+        <lightning:input label="Other Industry" value="{! v.otherIndustry }" />
+    </aura:if>
+</div>
+</aura:component>

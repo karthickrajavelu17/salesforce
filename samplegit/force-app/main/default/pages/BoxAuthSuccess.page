@@ -1,0 +1,4 @@
+<apex:page controller="Boxapicontroller" action="{!getAccessToken}" >
+    {!folder_item}
+    {!response}
+</apex:page>

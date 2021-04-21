@@ -1,0 +1,21 @@
+<aura:component >
+    <p>Original</p>
+  <lightning:icon iconName="action:new_account" size="medium"/>
+       <br/> <br/>  
+  <lightning:icon iconName="custom:custom26" size="large"/>
+       <br/><br/> 
+  <lightning:icon iconName="standard:account" size="large"/>
+       <br/><br/> 
+  <lightning:icon  iconName="utility:comments" size="large" />
+       <br/><br/> 
+    <p>Modified</p>
+  <lightning:icon class="redOnYellow" iconName="action:new_account" size="medium"/>
+       <br/> <br/>  
+  <lightning:icon class="orangeOnBlack" iconName="custom:custom26" size="large"/>
+       <br/><br/> 
+  <lightning:icon class="blackOnRed" iconName="standard:account" size="large"/>
+       <br/><br/> 
+  <lightning:icon class="black" iconName="utility:comments" size="large" />
+       <br/><br/> 
+
+</aura:component>

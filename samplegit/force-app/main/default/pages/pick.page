@@ -1,0 +1,13 @@
+<apex:page controller="DisplayButtononCheckboxEvent">
+    <apex:form >
+        <apex:outputpanel id="counter">
+            <apex:actionSupport event="onclick" rerender="button">
+                <apex:inputCheckbox value="{!check}"/>  
+           
+           </apex:actionSupport>
+        </apex:outputpanel>
+        <apex:outputPanel id="button">
+            <apex:commandButton value="Submit" rendered="{!check}"/>
+        </apex:outputPanel>
+    </apex:form>
+</apex:page>

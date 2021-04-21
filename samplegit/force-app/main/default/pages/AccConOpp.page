@@ -1,0 +1,13 @@
+<apex:page standardController="Account">
+  Name : <apex:outputField value="{!Account.Name}"/> <br/>
+  Phone : <apex:OutputField value="{!Account.Phone}" /><br/>
+  <br/>
+  <b>Contact List</b><br/>
+  <apex:dataTable value="{!Account.Contacts}" var="con">
+      <apex:column value="{!con.Name}"/>
+  </apex:dataTable><br/><br/>
+  <b>Opportunity List</b><br/>  
+  <apex:dataTable value="{!Account.Opportunities}" var="opty">
+      <apex:column value="{!opty.Name}"/>
+  </apex:dataTable>
+</apex:page>

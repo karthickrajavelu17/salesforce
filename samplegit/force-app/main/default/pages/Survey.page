@@ -1,0 +1,6 @@
+<apex:page standardController="Survey__c">
+    <apex:form >
+       <apex:inputField />    
+   
+    </apex:form>
+</apex:page>

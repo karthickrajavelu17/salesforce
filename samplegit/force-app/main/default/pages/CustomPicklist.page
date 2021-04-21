@@ -1,0 +1,14 @@
+<apex:page standardController="Survey__c">
+    <apex:form >
+        <apex:inputField value="{!Survey__c.Question__c}"/>
+        
+    <apex:selectList multiselect="false" size="1">
+        <apex:selectOption itemLabel="-None-" itemValue=""></apex:selectOption>
+        <apex:selectOption itemLabel="India" itemValue="INDIA"></apex:selectOption>
+        <apex:selectOption itemLabel="United States" itemValue="UK"></apex:selectOption>
+        <apex:selectOption itemLabel="Canada" itemValue="CANADA"></apex:selectOption>
+    
+    </apex:selectList>
+    </apex:form>
+
+</apex:page>

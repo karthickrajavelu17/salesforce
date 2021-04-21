@@ -1,0 +1,30 @@
+<apex:page standardcontroller="Survey__c" extensions="accountfiltercon">
+    <style>
+       #sa
+        {
+      
+        }
+    </style>
+    <script>
+    function change()
+    {
+        document.getElementById('sa').style.display='block';
+      }
+    </script>
+    
+    <apex:form >
+       <apex:commandButton onclick="change()" value="survey"/>
+    </apex:form>
+    
+    
+    <div class='picklistquestion' id='sa'>
+        
+    
+    <apex:form >
+    <apex:selectList size="1" value="{!selectedname}"> 
+        <apex:selectOptions value="{!selectedaccnamefields}"/>  
+    </apex:selectList>
+    <apex:inputField value="{!Survey__c.Answer__c}"/>
+    </apex:form>
+    </div>
+</apex:page>

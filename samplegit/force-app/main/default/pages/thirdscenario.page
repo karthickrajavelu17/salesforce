@@ -1,0 +1,26 @@
+<apex:page standardController="Opportunity" extensions="thirdscenatiocontroller" id="page">
+    <apex:detail relatedlist="false"/>
+ <apex:form >
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script>
+    function toggleDiv() {
+        $("[id$=op]").toggle();
+   }
+ </script>
+ <apex:outputPanel id="op" style="display:none">
+  
+  <apex:pageBlock id="pb" >
+   <apex:pageBlockSection id="pbs">
+
+       <apex:inputField value="{!survey.Question__c}"/>
+     <apex:inputField value="{!survey.Answer__c}"/>
+     
+          <apex:commandButton value="submit" action="{!submit}"/>
+     
+   </apex:pageBlockSection>
+  </apex:pageBlock>
+         
+ </apex:outputPanel>
+ <apex:commandButton value="Survey" reRender="null" id="cb" onclick="toggleDiv();"/>
+</apex:form>
+</apex:page>

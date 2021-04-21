@@ -1,0 +1,7 @@
+<apex:page controller="SearchYoutube" >
+    <apex:form >
+    <apex:inputText value="{!searchText}"/>
+     <apex:commandButton value="Search" action="{!search}"/>
+    </apex:form>
+    {!body}
+</apex:page>

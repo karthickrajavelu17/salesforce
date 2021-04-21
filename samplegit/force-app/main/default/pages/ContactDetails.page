@@ -1,0 +1,72 @@
+<apex:page standardController="Contact" extensions="AccountContactOpportunity">
+    <style>
+      .calender
+        {
+        width:8cm;
+        Height:5cm;
+        Margin:5px;
+        padding:5px;
+        border:2px solid blue;
+        display:inline-block;
+        }
+    
+    </style>
+    
+    <apex:detail relatedList="false"/>
+    <apex:variable value="{!Contact}" var="c" />
+                  <apex:pageBlock title="Account Detail">
+                      <apex:pageBlockSection >
+                         <apex:outputField value="{!c.Account.Name}"/>
+                         <apex:outputField value="{!c.Account.Phone}"/>
+                         <apex:outputField value="{!c.Account.Type}"/>
+                         <apex:outputField value="{!c.Account.Site}"/>  
+                         <apex:outputField value="{!c.Account.AnnualRevenue}"/> 
+                         <apex:outputField value="{!c.Account.NumberOfEmployees}"/> 
+               
+                      </apex:pageBlockSection>
+                  </apex:pageBlock>
+            >
+      <apex:pageBlock title="Opportunity Detail" id="co" >
+         <apex:pageBlockTable value="{!opplist}" var="opp">
+          <apex:column value="{!opp.Name}"/>
+          <apex:column value="{!opp.StageName}"/>
+         </apex:pageBlockTable>
+      </apex:pageBlock>
+  
+    <div class='calender'>
+         <apex:pageBlock title="January"></apex:pageBlock>
+    </div>
+     <div class='calender'>
+              <apex:pageBlock title="February"></apex:pageBlock>
+    </div>  
+     <div class='calender'>
+              <apex:pageBlock title="March"></apex:pageBlock>
+    </div>
+      <div class='calender'>
+     <apex:pageBlock title="April"></apex:pageBlock>
+    </div>
+         <div class='calender'>
+     <apex:pageBlock title="May"></apex:pageBlock>
+    </div>
+         <div class='calender'>
+     <apex:pageBlock title="June"></apex:pageBlock>
+    </div>
+         <div class='calender'>
+     <apex:pageBlock title="July"></apex:pageBlock>
+    </div>
+         <div class='calender'>
+     <apex:pageBlock title="August"></apex:pageBlock>
+    </div>
+         <div class='calender'>
+     <apex:pageBlock title="September"></apex:pageBlock>
+    </div>
+         <div class='calender'>
+     <apex:pageBlock title="Octomer"></apex:pageBlock>
+    </div>     
+    <div class='calender'>
+     <apex:pageBlock title="November"></apex:pageBlock>
+    </div>
+         <div class='calender'>
+     <apex:pageBlock title="December"></apex:pageBlock>
+    </div>
+</apex:page>

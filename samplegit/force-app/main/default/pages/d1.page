@@ -1,0 +1,5 @@
+<apex:page controller="d1">
+<apex:form >
+<apex:commandButton value="Launch" action="{!save}"/>
+</apex:form>
+</apex:page>

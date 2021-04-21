@@ -1,0 +1,15 @@
+<apex:page showHeader="false" sidebar="false" Controller="visualapex">
+    <script>
+    
+         callApex('Hello world');
+        
+    </script>
+    <apex:outputText id="out" value="{!greeting}">
+    </apex:outputText>
+    <apex:form >
+     <apex:actionFunction action="{!methodone}" name="callApex" reRender="out">
+         <apex:param name="message" value="" assignTo="{!greeting}"/>
+        </apex:actionFunction>
+    </apex:form>
+    
+</apex:page>

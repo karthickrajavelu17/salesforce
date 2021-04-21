@@ -1,0 +1,9 @@
+<apex:page controller="d2">
+    <apex:form >
+    <apex:inputField id="Name" value="{!account.Name}"/>
+    <apex:inputField id="phone" value="{!account.Phone}"/>
+    <apex:inputField id="Industry" value="{!account.Industry}"/>
+    <apex:inputField id="site"  value="{!account.Site}"/>
+    <apex:commandButton value="submit" action="{!save}"/>
+    </apex:form>
+    </apex:page>

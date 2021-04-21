@@ -1,0 +1,44 @@
+<apex:page standardController="Contact"  recordSetVar="contacts" setup="false" showChat="false" tabStyle="Account" wizard="true" >
+   <apex:include pageName="include" rendered="true"/>
+    <apex:pageBlock title="Contact Details">
+         <apex:pageBlockTable value="{!contacts}" var="c">
+             <apex:column value="{!c.FirstName}"/>
+             <apex:column value="{!c.LastName}"/>
+             <apex:column value="{!c.Email}"/>
+                <apex:column >
+                <apex:facet name="header">Phone</apex:facet>
+                        {!c.Phone}
+            </apex:column>
+        
+        </apex:pageBlockTable>
+<apex:form >   
+                    <apex:pageBlockSection >
+                <apex:outputField value="{!contact.LastName}">
+                    <apex:inlineEditSupport showOnEdit="saveButton, cancelButton" 
+                        hideOnEdit="editButton" event="ondblclick" 
+                        changedStyleClass="myBoldClass" resetFunction="resetInlineEdit"/>
+                </apex:outputField>
+                <apex:outputField value="{!contact.accountId}"/>
+                <apex:outputField value="{!contact.phone}"/>
+            </apex:pageBlockSection>
+ </apex:form>        
+        
+    
+    </apex:pageBlock>
+    <apex:ListViews type="Case" />
+     <apex:ListViews type="Account" />
+       <apex:enhancedList type="Account" height="300" rowsPerPage="10" id="AccountList" />
+    <apex:enhancedList type="Lead" height="300" rowsPerPage="25"
+        id="LeadList" customizable="False" />
+    
+    <apex:chart height="250" width="450" animate="true" legend="true" data="Contact">
+    <apex:axis type="Gauge" position="left" margin="-10" 
+        minimum="0" maximum="100" steps="10"/>
+    <apex:gaugeSeries dataField="data1" highlight="true" tips="true" donut="25" 
+        colorSet="#F49D10, #ddd">
+        <apex:chartLabel display="over"/>
+    </apex:gaugeSeries>
+</apex:chart>
+    
+    <apex:iframe src="https://www.google.com" scrolling="true" id="theIframe"/>
+</apex:page>

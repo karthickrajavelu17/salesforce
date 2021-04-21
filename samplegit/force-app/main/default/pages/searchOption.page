@@ -1,0 +1,18 @@
+<apex:page controller="searchOption">
+  <apex:form >
+  <apex:PageBlock >
+  <apex:PageBlockSection >
+  <apex:PageBlockSectionItem >
+  <apex:outputLabel > Name</apex:outputLabel>
+  <apex:inputText value="{!name}"/>
+  </apex:PageBlockSectionItem>
+  <apex:commandButton value="Go" action="{!executeSearch}"/>
+  </apex:PageBlockSection>
+  <apex:PageBlockTable var="act" value="{!myconct}"> 
+  <apex:column value="{!act.name}"/>  
+
+  </apex:PageBlockTable>
+  </apex:PageBlock>
+ 
+  </apex:form>
+</apex:page>

@@ -1,0 +1,17 @@
+<apex:page standardController="Opportunity" showHeader="false"  extensions="savePDF"  >
+
+   
+  <apex:form >
+    <apex:actionFunction name="saveAttachement" action="{!saveAttachement}" rerender="allPanel"/>
+
+
+        <script>
+           window.onload=function()
+           {
+             saveAttachement();
+           };
+        </script>
+
+  </apex:form>
+
+</apex:page>

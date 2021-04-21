@@ -1,0 +1,7 @@
+<apex:page standardController="Opportunity" extensions="wordpage1" >
+ 
+    <apex:detail relatedList="false"/>
+    <apex:form >
+     <apex:commandButton value="Product Report" action="{!survey}"/>
+    </apex:form>
+</apex:page>

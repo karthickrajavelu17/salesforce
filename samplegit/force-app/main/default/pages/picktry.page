@@ -1,0 +1,35 @@
+<apex:page Controller="AccController" id="page">
+ <apex:form >
+
+<script>
+function myFunction() {
+var x = document.getElementById('myDIV');
+if (x.style.display === 'none') {
+x.style.display = 'block';
+} else {
+x.style.display = 'none';
+}
+}
+</script>
+<div id='myDIV' style='display:none'>
+    
+
+ <apex:outputPanel id="op" >
+  
+  <apex:pageBlock id="pb" >
+   <apex:pageBlockSection id="pbs">
+      
+     <apex:inputField value="{!account.name}"/>
+     <apex:inputField value="{!account.AnnualRevenue}"/>
+     <apex:inputField value="{!account.Phone}"/>
+          <apex:commandButton value="submit" action="{!submit}"/>
+     
+   </apex:pageBlockSection>
+  </apex:pageBlock>
+         
+ </apex:outputPanel>
+</div>
+ 
+   <apex:commandButton value="Launch" reRender="null" id="cb1" onclick="myFunction();"/>
+</apex:form>
+</apex:page>

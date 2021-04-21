@@ -1,0 +1,11 @@
+<aura:component controller='CurrencyConvertor'>
+    <aura:attribute name='inr' type='Decimal'/>
+    
+    <aura:attribute name="euro" type='Decimal'/>
+    
+  <lightning:input type="number" name="decimal" label="Enter a Euro" step="0.001" value='{!v.euro}'/>
+  <lightning:input type="number" name="decimal" label="Converted to INR" step="0.001" value='{!v.inr}'/>
+    <br/>
+    <lightning:button variant="brand" label="Convert" title="Convert action" onclick="{! c.handleClick }" />
+    
+</aura:component>

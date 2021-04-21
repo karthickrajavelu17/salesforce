@@ -1,0 +1,6 @@
+<apex:page controller="page3">
+    <apex:form >
+    <apex:outputField value="{! account.name }"/>
+    <apex:outputField value="{! account.phone }"/> 
+    </apex:form>
+</apex:page>

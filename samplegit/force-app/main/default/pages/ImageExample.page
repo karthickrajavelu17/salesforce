@@ -1,0 +1,41 @@
+<apex:page standardController="Account" tabStyle="Opportunity" showHeader="true" sidebar="true" setup="true">
+  <style>
+       .grid
+      {
+      width:5cm;
+      Height:5cm;
+      background:yellow;
+      display:inline-block;
+      margin:5px;
+      border:2px solid black;
+      }
+      
+  </style>
+<div class='grid'>
+    
+   
+    <a href="{!URLFOR($Action.Account.List, $ObjectType.Account)}">
+        <apex:image url="{!URLFOR($Resource.images, 'images/contact.png')}" width="180" height="180"  />
+    </a>
+ </div>   
+    <div class='grid'>
+        
+   
+    <a href="{!URLFOR($Action.Contact.List, $ObjectType.Contact)}">
+        <apex:image url="{!URLFOR($Resource.images, 'images/contact1.png')}" width="180" height="180"/>
+    </a>
+     </div>  
+     <div class='grid'>
+           <a href="{!URLFOR($Action.Opportunity.List, $ObjectType.Opportunity)}">
+        <apex:image url="{!URLFOR($Resource.images, 'images/contact1.png')}" width="180" height="180" />
+    </a>
+    </div>
+    <div class='grid'>
+        <a href="{!URLFOR($Action.Lead.List, $ObjectType.Lead)}">
+        <apex:image url="{!URLFOR($Resource.images, 'images/contact1.png')}" width="180" height="180" />
+    </a>
+    </div>
+
+   
+
+</apex:page>

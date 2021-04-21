@@ -1,0 +1,19 @@
+<apex:page standardcontroller="Opportunity" extensions="wordpage12" contentType="application/msword#Scenario1.doc">
+    
+    <h1>
+        Product Catalog
+    </h1>
+     <apex:image url="{!URLFOR($Resource.images, 'images/contact1.png')}" width="180" height="180" />
+  <apex:form >
+  <apex:PageBlock >
+ 
+  <apex:PageBlockTable var="op" value="{!myopp}"> 
+  <apex:column value="{!op.name}"/>  
+      <apex:column value="{!op.id}"/>
+      <apex:column value="{!op.Quantity}"/>
+
+  </apex:PageBlockTable>
+  </apex:PageBlock>
+ 
+  </apex:form>
+</apex:page>

@@ -1,0 +1,22 @@
+<apex:page standardController="Contact" showHeader="false" sidebar="false">
+{!Contact.Name}<br/>
+{!Contact.Phone}<br/>
+{!Contact.Email}<br/>
+<apex:form >
+ <apex:pageBlock title="Contact info">
+    <apex:pageBlockSection title="Modifying page block">
+     <apex:outputField value="{!Contact.Name}"/><br/>
+     <apex:inputField value="{!Contact.Phone}"/><br/>
+     
+     <apex:commandButton value="Save button" action="{!Save}"/><br/>
+     <apex:commandLink value="Save Link" action="{!QuickSave}"/>
+    
+     
+    </apex:pageBlockSection>
+ 
+ 
+ </apex:pageBlock>
+
+
+</apex:form>
+</apex:page>

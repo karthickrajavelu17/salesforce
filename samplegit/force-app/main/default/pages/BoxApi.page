@@ -1,0 +1,5 @@
+<apex:page controller="Boxapicontroller">
+    <apex:form >
+    <apex:commandButton value="Get Authorize" action="{!authorize}"/>
+    </apex:form>
+</apex:page>

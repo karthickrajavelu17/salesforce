@@ -1,0 +1,6 @@
+<apex:page standardController="Account">
+    <apex:form >
+        <apex:inputField value="{!Account.Type}"/>
+    <apex:commandButton value="Survey"/>
+    </apex:form>
+</apex:page>

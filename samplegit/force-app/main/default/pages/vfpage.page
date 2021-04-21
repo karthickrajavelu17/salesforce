@@ -1,0 +1,7 @@
+<apex:page standardController="Account">
+    <apex:pageBlock title="Account Query">
+        {!Account.Name} account;
+    
+    </apex:pageBlock>
+    
+</apex:page>

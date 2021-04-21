@@ -1,0 +1,12 @@
+<aura:component controller='LightningApexController' implements="force:lightningQuickAction,force:appHostable,force:hasRecordId"> 
+   <center><b>This is a Lightning component </b></center>
+    <aura:attribute name='list' type='Account[]'/>
+    <aura:attribute name="recordId" type="Id" />
+    <lightning:button label='submit' onclick='{!c.handleclick}'/>
+          <aura:iteration items='{!v.list}' var='a'>
+              <p>{!a.id},{!a.Name}</p>
+    
+          </aura:iteration>
+                    <lightning:outputField value='{!v.recordId}' />
+	    
+</aura:component>

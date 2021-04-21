@@ -1,0 +1,8 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader">
+    <footer>
+        <div class="modal-footer slds-modal__footer attach-to-bottom">
+            <button class="slds-button slds-button_neutral">Cancel</button>
+            <button class="slds-button slds-button_brand">Save</button>
+        </div>
+    </footer>
+</aura:component>

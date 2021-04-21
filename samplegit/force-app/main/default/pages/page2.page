@@ -1,0 +1,7 @@
+<apex:page controller="page2">
+<apex:form >
+<apex:outputField value="{!account.name}"/>
+<apex:inputField value="{!account.phone}"/>
+<apex:commandButton value="update" action="{!save}"/>
+</apex:form>
+</apex:page>

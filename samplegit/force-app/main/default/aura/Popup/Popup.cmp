@@ -1,0 +1,8 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes">
+
+    <aura:attribute name="firstname" type='String'/>
+
+    <ui:inputText label="First Name" value="{!v.firstname}"/>
+    <ui:button label="Register" press="{!c.registerUser}"/>
+
+</aura:component>

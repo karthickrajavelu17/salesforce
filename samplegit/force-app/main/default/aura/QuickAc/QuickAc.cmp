@@ -1,0 +1,5 @@
+<aura:component implements='force:lightningQuickAction'>
+    <p>This is Component
+    </p>
+	
+</aura:component>
