@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Reg_hrs__c</fullName>
+    <externalId>false</externalId>
+    <formula>TRIM(LEFT( Total_Hours__c,2))&amp;&apos;:&apos;&amp;IF(VALUE(TRIM(MID(Total_Hours__c,7,2))) &lt;&gt; 0,MID(Total_Hours__c,7,2),&apos;00&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Reg hrs</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

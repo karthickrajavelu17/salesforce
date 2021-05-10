@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Packages_Single_Doc__c</fullName>
+    <externalId>false</externalId>
+    <label>Packages or Single Doc</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Doc_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Real Estate / Mortgage Packages</fullName>
+                <default>false</default>
+                <label>Real Estate / Mortgage Packages</label>
+            </value>
+            <value>
+                <fullName>Estate Planning Packages</fullName>
+                <default>false</default>
+                <label>Estate Planning Packages</label>
+            </value>
+            <value>
+                <fullName>Complex Life Packages</fullName>
+                <default>false</default>
+                <label>Complex Life Packages</label>
+            </value>
+            <value>
+                <fullName>Other Packages</fullName>
+                <default>false</default>
+                <label>Other Packages</label>
+            </value>
+            <value>
+                <fullName>Will’s</fullName>
+                <default>false</default>
+                <label>Will’s</label>
+            </value>
+            <value>
+                <fullName>Title’s</fullName>
+                <default>false</default>
+                <label>Title’s</label>
+            </value>
+            <value>
+                <fullName>POA’s</fullName>
+                <default>false</default>
+                <label>POA’s</label>
+            </value>
+            <value>
+                <fullName>Trust&apos;s</fullName>
+                <default>false</default>
+                <label>Trust&apos;s</label>
+            </value>
+            <value>
+                <fullName>Deed’s</fullName>
+                <default>false</default>
+                <label>Deed’s</label>
+            </value>
+            <value>
+                <fullName>Affidavits</fullName>
+                <default>false</default>
+                <label>Affidavits</label>
+            </value>
+            <value>
+                <fullName>Lien Docs</fullName>
+                <default>false</default>
+                <label>Lien Docs</label>
+            </value>
+            <value>
+                <fullName>Bill of Sale</fullName>
+                <default>false</default>
+                <label>Bill of Sale</label>
+            </value>
+            <value>
+                <fullName>Promissory Notes</fullName>
+                <default>false</default>
+                <label>Promissory Notes</label>
+            </value>
+            <value>
+                <fullName>Cert of Ownership</fullName>
+                <default>false</default>
+                <label>Cert of Ownership</label>
+            </value>
+            <value>
+                <fullName>Medical Directives</fullName>
+                <default>false</default>
+                <label>Medical Directives</label>
+            </value>
+            <value>
+                <fullName>Bank Transfer of Service</fullName>
+                <default>false</default>
+                <label>Bank Transfer of Service</label>
+            </value>
+            <value>
+                <fullName>Other Single Docs</fullName>
+                <default>false</default>
+                <label>Other Single Docs</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Packages</controllingFieldValue>
+            <valueName>Real Estate / Mortgage Packages</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Packages</controllingFieldValue>
+            <valueName>Estate Planning Packages</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Packages</controllingFieldValue>
+            <valueName>Complex Life Packages</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Packages</controllingFieldValue>
+            <valueName>Other Packages</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Single Doc&apos;s</controllingFieldValue>
+            <valueName>Will’s</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Single Doc&apos;s</controllingFieldValue>
+            <valueName>Title’s</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Single Doc&apos;s</controllingFieldValue>
+            <valueName>POA’s</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Single Doc&apos;s</controllingFieldValue>
+            <valueName>Trust&apos;s</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Single Doc&apos;s</controllingFieldValue>
+            <valueName>Deed’s</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Single Doc&apos;s</controllingFieldValue>
+            <valueName>Affidavits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Single Doc&apos;s</controllingFieldValue>
+            <valueName>Lien Docs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Single Doc&apos;s</controllingFieldValue>
+            <valueName>Bill of Sale</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Single Doc&apos;s</controllingFieldValue>
+            <valueName>Promissory Notes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Single Doc&apos;s</controllingFieldValue>
+            <valueName>Cert of Ownership</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Single Doc&apos;s</controllingFieldValue>
+            <valueName>Medical Directives</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Single Doc&apos;s</controllingFieldValue>
+            <valueName>Bank Transfer of Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Single Doc&apos;s</controllingFieldValue>
+            <valueName>Other Single Docs</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>
